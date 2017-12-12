@@ -1,0 +1,75 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+  padding: 10px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  font-size: 10px;
+  font-weight: normal;
+  white-space: nowrap;
+  background: transparent;
+  }
+
+  &--primary {
+    background: $blue;
+    color: $white;
+    border: 1px solid $gullgray;
+    min-width: 100px;
+  }
+
+  &--secondary {
+    background: $white;
+    color: $codegray;
+    border-color: $gray;
+  }
+
+  &--outline {
+    border: 3px solid #dac14a;
+  }
+
+  &--fullwidth {
+    width: 100%;
+  }
+
+  &--squre {
+    width: 31px;
+    height: 31px;
+    border: 1px solid $gullgray;
+    padding: 2px;
+    color: inherit;
+    font-size: 0;
+  }
+
+  &--signbook {
+    &::before {
+      @include special-sign($book);
+      font-size: 12px;
+      margin-right: 15px;
+    }
+  }
+
+  &--signheadphones {
+    &::before {
+      @include special-sign($headphones);
+      font-size: 12px;
+      margin-right: 15px;
+    }
+  }
+
+  &--signeye {
+    &::before {
+      @include special-sign($eye);
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+
+  &--signvolumeup {
+    &::before {
+      @include special-sign($volumeup);
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+}
