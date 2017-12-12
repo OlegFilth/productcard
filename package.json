@@ -1,0 +1,22 @@
+{
+  "name": "bonfire",
+  "version": "1.0.0",
+  "description": "Product card",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlegFilth/bonfire.git"
+  },
+  "author": "Oleg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlegFilth/bonfire/issues"
+  },
+  "homepage": "https://github.com/OlegFilth/bonfire#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
